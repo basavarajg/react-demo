@@ -2,8 +2,8 @@ var express = require('express')
 var app = express()
 
 app.use(express.static('css/'));
-app.use(express.static('js/'));
-app.use(express.static('../dist/'));
+
+app.use(express.static('./dist/'));
 
 //Store all HTML files in view folder.
 //app.set('view engine', 'jade');

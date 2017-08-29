@@ -13,9 +13,10 @@ body {
 .font {
   font-family: "Times New Roman", Times, sans-serif;
   color: #058AF3;
+  background: #888;
 }
 
 .maps {
-  width: 40%; 
+  width: 40%;
   height: 400px;
 }
