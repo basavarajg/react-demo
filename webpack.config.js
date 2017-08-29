@@ -5,10 +5,10 @@ var BUILD_DIR = path.resolve(__dirname, 'dist/');
 var APP_DIR = path.resolve(__dirname, 'src/jsx/');
 
 var config = {
-  entry: APP_DIR + '/maps.jsx',
+  entry: APP_DIR,
   output: {
     path: BUILD_DIR,
-    filename: 'maps.js'
+    filename: 'bundle.js'
   },
   module : {
     loaders : [
