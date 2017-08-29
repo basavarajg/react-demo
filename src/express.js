@@ -1,8 +1,9 @@
 var express = require('express')
 var app = express()
 
-app.use(express.static('src/css'));
-app.use(express.static('src/js'));
+app.use(express.static('css/'));
+app.use(express.static('js/'));
+app.use(express.static('../dist/'));
 
 //Store all HTML files in view folder.
 //app.set('view engine', 'jade');
@@ -12,8 +13,8 @@ app.get('/', function (req, res) {
     //res.render('index', {title: 'Home', message: 'Hellow World from Jade'});
 });
 
-app.get('/resume', function (req, res) {
-    res.sendFile(__dirname + '/html/resume.html');
+app.get('/maps', function (req, res) {
+    res.sendFile(__dirname + '/html/maps.html');
     //res.render('index', {title: 'Home', message: 'Hellow World from Jade'});
 });
 

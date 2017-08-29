@@ -1,14 +1,14 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'src/js/');
+var BUILD_DIR = path.resolve(__dirname, 'dist/');
 var APP_DIR = path.resolve(__dirname, 'src/jsx/');
 
 var config = {
-  entry: APP_DIR + '/app.jsx',
+  entry: APP_DIR + '/maps.jsx',
   output: {
     path: BUILD_DIR,
-    filename: 'app.js'
+    filename: 'maps.js'
   },
   module : {
     loaders : [
